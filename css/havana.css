@@ -81,17 +81,3 @@
     background-color:#fff;
 }
 
-.owl-carousel.owl-theme{
-    display: flex;
-    justify-content: space-around;
-
-}
-.item{
-    width:80PX;
-    height: 300px;
-    border: 1px solid #000;
-}
-.item img{
-    width: 130px;
-    height: 150px;
-}
