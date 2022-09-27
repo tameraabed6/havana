@@ -1,0 +1,36 @@
+.bady{
+    direction: rtl;  
+    width: 350px;
+    height: 700px;
+    border: 1px solid red;
+    margin:auto;
+}
+.bady h1 , p{
+    margin-right:80px;
+}
+.bady p{
+    color: rgb(181, 169, 169);
+}
+.radio-top{
+    display: flex;
+    justify-content: space-around;
+}
+.inp{
+    margin-right:10%;
+   
+}
+.inp input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(202,202,202);
+    width: 250px;
+    height: 25px;
+}
+.create{
+    background-color: rgb(161,51,107);
+    color: #fff;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    
+}
