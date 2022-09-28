@@ -8,9 +8,8 @@
     <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/havana.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -34,21 +33,23 @@
                         aria-autocomplete="both" autocomplete="off">
                 </div>
                 <div class="header-left">
-                    <ul>
-                        <li>
-                            <a href=""><i class="fa-brands fa-shopify"></i>
-                                <span class="">سلة التسوق</span>
-                                <span class="">00س.ر</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Login.html"><i class="fas fa-user"></i>
-                                <span class="">حسابي</span>
-                                <span class="">مرحبا تسجيل الدخول</span>
-                            </a>
-                        </li>
-
-                    </ul>
+                    
+                        <div class="basket">
+                            <i class="fa-thin fa-basket-shopping-simple"></i>
+                            <a href="#" data-sidebartrigger="{&quot;side&quot;: &quot;right&quot;, &quot;section&quot;:&quot;utilies-minicart&quot;, &quot;event&quot;:&quot;dropdowndialogopen&quot;}" class="action showcart cdz-top-link" data-bind="scope: 'minicart_content'"><span class="text">سلة التسوق</span>
+                                <span data-bind="html: getCartParam('subtotal'), css: 'cart-subtotal'" class="cart-subtotal"><span class="price">0.00 ر.س.</span>
+                                </span> <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: false">
+                                    <span class="counter-number"><!-- ko text: getCartParam('summary_count') -->0<!-- /ko --></span> 
+                                <span class="counter-label"><!-- ko if: getCartParam('summary_count') --><!-- /ko --></span></span></a>
+                        </div>
+                        <div class="user">
+                            <i class="fas fa-user"></i>
+                            <a href="Login.html" class="account-trigger cdz-dd-link mt_signin"><span class="text-uppercase">حسابي</span> 
+                                <span class="text-underlink">مرحباً، تسجيل الدخول</span></a>
+                    
+                        </div>
+                    
+                   
 
                 </div>
 
@@ -313,3 +314,5 @@
 </body>
 
 </html>
+<a href="javascript:void(0)" class="account-trigger cdz-dd-link mt_signin"><span class="text-uppercase">حسابي</span> 
+    <span class="text-underlink">مرحباً، تسجيل الدخول</span></a>
